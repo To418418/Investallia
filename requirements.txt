@@ -1,0 +1,40 @@
+# requirements.txt
+
+# --- Streamlit and Web Frameworks ---
+streamlit>=1.35.0
+Flask>=2.0
+gunicorn>=20.0
+
+# --- Data Handling and Analysis ---
+numpy
+pandas
+pandas_datareader
+mplfinance
+ta # Technical Analysis Library
+tabulate
+chardet
+
+# --- Visualization ---
+plotly
+japanize-matplotlib
+
+# --- Google Cloud & AI Services ---
+google-generativeai>=0.8.0
+google-cloud-storage>=2.10.0
+google-cloud-texttospeech
+google-cloud-secret-manager
+google-auth>=2.30.0,<3.0.0
+google-api-python-client>=2.80.0
+protobuf==4.25.3 # Keep specific version for compatibility
+
+# --- Audio Processing ---
+pydub # Required for audio file manipulation (e.g., combining chunks)
+
+# --- Financial Data & News ---
+yfinance
+tavily-python
+requests
+
+# --- Utilities ---
+python-dateutil
+streamlit-js-eval # Used for getting screen size etc.
