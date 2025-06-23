@@ -2,7 +2,7 @@
 投資AIエージェント「Investallia」をデプロイするためのコード
 
 
-```
+
 # 金融情報分析＆LLMアシスタントアプリ
 
 [![Site](https://img.shields.io/badge/Site-Open-blue?style=flat-square&logo=google-cloud)](https://hack-app-378173134631.asia-northeast1.run.app/)
