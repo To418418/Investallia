@@ -208,7 +208,7 @@ def get_stock_data_for_html_report(ticker_code_input: str, company_name_jp: str,
 
         data_payload["financials"] = [
             {"label": "時価総額", "value": format_japanese_yen(info.get('marketCap'), unit_oku=True, decimals=1)},
-            {"label": "配当利回り", "value": format_percentage(info.get('dividendYield'))},
+            {"label": "配当利回り", "value": format_percentage(info.get('dividendYield')/100)},
             {"label": "1株配当", "value": format_japanese_yen(info.get('dividendRate', info.get('trailingAnnualDividendRate')))},
             {"label": "PER", "value": f"{info.get('trailingPE'):.2f}倍" if isinstance(info.get('trailingPE'), (int, float)) and pd.notnull(info.get('trailingPE')) else 'N/A'},
             {"label": "PBR", "value": f"{info.get('priceToBook'):.2f}倍" if isinstance(info.get('priceToBook'), (int, float)) and pd.notnull(info.get('priceToBook')) else 'N/A'},
